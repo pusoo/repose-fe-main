@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* LOGIN */
+
+.login {
+  display: flex;
+  height: 100vh;
+}
+
+.login > .left-side {
+  width: 50%;
+  background-color: #383636;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login > .left-side > h1 {
+  width: 10ch;
+  color: #fff;
+  font-size: 80px;
+}
+
+.login > .right-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login > .right-side > h1 {
+  font-size: 46px;
+}
+
+.login > .right-side > form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.right-side > form > input {
+  background-color: #d9d9d9;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.right-side > form > button {
+  margin-top: 10px;
+  background-color: #545454;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+
+.home {
+  display: flex;
+}
+
+.home > h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.home > .sidebar > .logo {
+  margin: 40px 10px 10px 10px;
+  border-radius: 5px;
+  filter: brightness(2) invert(1);
+  width: 130px;
+}
+
+.home > .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #383636;
+  width: 240px;
+  height: 100vh;
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 36px;
+  box-shadow: 2px 0px 2px -2px rgb(0 0 0 / 75%);
+}
+
+.home > .sidebar > .divider {
+  background-color: #fff;
+  height: 1px;
+  width: 80%;
+}
+
+.sidebar > aside {
+  color: #fff;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sidebar > aside > h1 {
+  text-align: center;
+}
+
+.sidebar > aside ul li a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sidebar > aside ul li a:hover {
+  background-color: #fff;
+  color: #383636;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  margin-left: 15px;
+}
+
+.sidebar > aside ul > .active {
+  background-color: #fff;
+  color: #383636;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  margin-left: 15px;
+}
+
+.sidebar > button {
+  background-color: #423f3f;
+  border: none;
+  width: 48px;
+  height: 40px;
+  border-radius: 11px;
+  padding: 5px;
+  margin-top: 120px;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.sidebar > button:hover {
+  background-color: #4f4f4fa3;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  margin: 15px;
+  background-color: #dadada;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px -2px rgb(0 0 0 / 74%);
+}
+
+/* User Dashboard */
+
+.user-dash {
+  display: flex;
+  gap: 20px;
+}
+
+.used-leave,
+.leave-balance {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  width: 50%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px -2px rgb(0 0 0 / 74%);
+}
+.used-leave p:nth-child(1),
+.leave-balance p:nth-child(1) {
+  font-size: 24px;
+}
+
+.used-leave p:nth-child(2),
+.leave-balance p:nth-child(2) {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Apply leave */
+
+.apply-leave {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.apply-leave > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.apply-leave > form > input {
+  margin-bottom: 15px;
+}
+
+.apply-leave > form > label {
+  font-weight: 700;
+  font-size: 18px;
+  color: #383636;
+}
+
+.apply-leave > form > input,
+textarea {
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+textarea {
+  height: 50px;
+}
+
+.apply-leave > form > button {
+  border: none;
+  background-color: #383636;
+  border-radius: 5px;
+  width: 25%;
+  font-weight: 700;
+  padding: 10px;
+  align-self: flex-end;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.apply-leave > form > button:hover {
+  background-color: #303030;
+}
+
+/* My leaves */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+}
+
+td,
+th {
+  border: 1px solid #5b5b5b;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #404040;
+  text-align: center;
+}
+
+td {
+  background: rgb(54 54 54 / 1);
+}
+
+tr > td > button {
+  border: none;
+  background-color: #c6c6c6;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+tr > td > button:hover {
+  background-color: #b3b3b3;
+}
+
+/* ADMIN */
+
+.admin-dash {
+  display: flex;
+}
+
+.pending-leave {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  width: 50%;
+  height: 100px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px -2px rgb(0 0 0 / 74%);
+}
+
+.pending-leave > p:nth-child(1) {
+  font-size: 24px;
+}
+
+.pending-leave > p:nth-child(2) {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* User list */
+
+.user-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-list > form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+}
+
+.user-list > form > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.user-list > form > input {
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.user-list > form > button {
+  border: none;
+  background-color: #383636;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.user-list > form > button:hover {
+  background-color: #b3b3b3;
+}
